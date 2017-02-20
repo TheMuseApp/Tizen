@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>Circular UI</title>
+<link rel="stylesheet"
+	href="../lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="hrmPage">
+		<div class="ui-content hrmContent" style="height: 360px !important;">
+			<div class="hrmDiv1" id="mainHRMDiv">
+				<img alt="" src="../css/images/ezgif.com-crop.gif"
+					style="height: 191px; width: 300px;">
+			</div>
+			<div id="partialHRMDiv" style="display: none">
+				<img alt="heartImage" src="../css/images/rt4.png" id="hrmImg">
+				<div class="measureDiv">Measure</div>
+				<div class="mainrate" id="hrm-text">78 bmp</div>
+			</div>
+
+
+
+			<!--HTML code-->
+			<div id="1btnPopup" class="ui-popup">
+				<div class="ui-popup-content">Not detecting! Please try again!</div>
+				<div class="ui-popup-footer popupFooter">
+					<button id="1btnPopup-cancel" class="ui-btn">Ok</button>
+				</div>
+			</div>
+		</div>
+		<!--HTML code-->
+			<div id="1btnPopup" class="ui-popup">
+				<div class="ui-popup-header"></div>
+				<div class="ui-popup-content">Not detecting! Please try again!</div>
+				<div class="ui-popup-footer">
+					<button id="1btnPopup-cancel" class="ui-btn">Cancel</button>
+				</div>
+			</div>
+		<script type="text/javascript" src="HRM.js"></script>
+	</div>
+	<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="../js/circle-helper.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+	<script src="../app.js"></script>
+	<script src="../lowBatteryCheck.js"></script>
+
+</body>
+</html>

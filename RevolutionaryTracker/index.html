@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>Circular UI</title>
+<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<div class="ui-content content-padding" style="margin-top: -81px;"
+			id="content">
+			<!-- Circle Profile -->
+			<div id="moreoptionsPopupCircle" class="ui-popup ns">
+				<div id="selector" class="ui-selector">
+					<div class="ui-item call-icon callbackground" data-title="Call"
+						id="call"></div>
+					<div class="ui-item sos-icon sosbackground" data-title="SOS"
+						id="sos"></div>
+					<div class="ui-item setting-icon settingbackground"
+						data-title="Settings" id="setting"></div>
+					<div class="ui-item stop-icon stopbackground" data-title="Stop"
+						id="stop"></div>
+					<div class="ui-item pingrate-icon pingratebackground"
+						data-title="PingRate" id="pingrate1">
+						<div class="blink_me"><div id="pingrateval" class="pingratevalue">0</div>
+						<div id="pingratetext" class="pingratetext">OFF</div></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- div FOR READING HEART RATE READING -->
+			<div class="smallProcessingPage1" id="smallProcessingPage"
+				style="visibility: hidden;">
+
+				<div class="small-processing-container">
+					<div class="ui-processing"></div>
+					<div class="ui-processing-text"></div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.js"></script>
+	<script type="text/javascript" src="js/circle-helper.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script src="app.js"></script>
+	<script src="lowBatteryCheck.js"></script>
+
+</body>
+</html>

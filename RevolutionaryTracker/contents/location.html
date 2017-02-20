@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>Circular UI</title>
+<link rel="stylesheet"
+	href="../lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="locationPage">
+		<div class="ui-content locationContent"
+			style="height: 360px !important; margin-top: 53px !important;">
+			<div style="font-size: 46px; text-decoration: underline;">GPS
+				Info</div>
+
+			<div>
+				<span class="spanCommon">Latitude: </span><span id="lat"
+					style="font-size: 29px;"></span>
+			</div>
+			<div>
+				<span class="spanCommon">Longitude: </span><span id="long"
+					style="font-size: 29px;"></span>
+			</div>
+			<div>
+				<span class="spanCommon">Accuracy:(m) </span><span id="accu"
+					style="font-size: 29px;"></span>
+			</div>
+			<div>
+				<span class="spanCommon">Speed:(m/h) </span><span id="speed"
+					style="font-size: 29px;"></span>
+			</div>
+			<div>
+				<span class="spanCommon">Altitude:(m) </span><span id="altitude"
+					style="font-size: 29px;">0</span>
+			</div>
+			<div>
+				<span class="spanCommon">Sig.Strength: </span><span id="strength"
+					style="font-size: 29px;">0</span>
+			</div>
+		</div>
+		<script type="text/javascript" src="location.js"></script>
+	</div>
+</body>
+<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+<script type="text/javascript" src="../js/circle-helper.js"></script>
+<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+<script src="../app.js"></script>
+<script src="../lowBatteryCheck.js"></script>
+</html>

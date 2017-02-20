@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/RevolutionaryTracker" version="1.0.0" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:application id="R70X8j9Ivq.RevolutionaryTracker" package="R70X8j9Ivq" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/humanactivitymonitor"/>
+    <feature name="http://tizen.org/feature/location.gps"/>
+    <feature name="http://tizen.org/feature/location.batch"/>
+    <feature name="http://tizen.org/feature/network.push"/>
+    <feature name="http://tizen.org/feature/network.wifi"/>
+    <feature name="http://tizen.org/feature/sensor.heart_rate_monitor"/>
+    <feature name="http://tizen.org/feature/sensor.pedometer"/>
+    <feature name="http://tizen.org/feature/sensor.wrist_up"/>
+    <feature name="http://tizen.org/feature/network.internet"/>
+    <feature name="http://tizen.org/api/alarm" required="true"/>
+    <feature name="http://tizen.org/api/alarm.read" required="true"/>
+    <feature name="http://tizen.org/api/alarm.write" required="true"/>
+    <feature name="http://tizen.org/feature/camera"/>
+    <feature name="http://tizen.org/feature/network.telephony"/>
+    <icon src="icon.png"/>
+    <tizen:metadata key="WearableAppType" value="Linked"/>
+    <tizen:metadata key="WearableAppLocation" value="res/SpecialEditionWatch.wgt"/>
+    <name>Revolutionary Tracker</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/healthinfo"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.info"/>
+    <tizen:privilege name="http://tizen.org/privilege/call"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/location"/>
+    <tizen:privilege name="http://tizen.org/privilege/notification"/>
+    <tizen:privilege name="http://tizen.org/privilege/push"/>
+    <tizen:privilege name="http://tizen.org/privilege/system"/>
+    <tizen:privilege name="http://tizen.org/privilege/power"/>
+    <tizen:privilege name="http://tizen.org/privilege/telephony"/>
+    <tizen:privilege name="http://tizen.org/privilege/alarm"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/appmanager.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/message.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/message.read"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting background-support="enable" encryption="disable" hwkey-event="enable"/>
+</widget>

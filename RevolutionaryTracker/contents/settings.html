@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>Circular UI</title>
+<link rel="stylesheet"
+	href="../lib/tau/wearable/theme/default/tau.min.css">
+<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)"
+	href="../lib/tau/wearable/theme/default/tau.circle.min.css">
+<!-- load theme file for your application -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="ui-page" id="settings">
+		<div class="ui-content">
+			<div id="moreoptionsPopupCircle2" class="ui-popup ns">
+				<div id="selector2" class="ui-selector">
+					<div class="ui-item steps-icon stepsBackground" data-title="Steps"
+						id="steps"></div>
+					<div class="ui-item hrm-icon hrmbackground" data-title="HRM"
+						id="hrm"></div>
+					<div class="ui-item signal-icon signalbackground"
+						data-title="Signal Strength" id="signalstrength"></div>
+					<div class="ui-item gps-icon gpsbackground" data-title="GPS"
+						id="location"></div>
+					<div class="ui-item battery-icon batteryBackground"
+						data-title="Battery" id="battery"></div>
+					<div class="ui-item config-icon configbackground"
+						data-title="Configuration" id="Configuration"></div>
+
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="settings.js"></script>
+	</div>
+	<script type="text/javascript" src="../lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="../js/circle-helper.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.9.1.js"></script>
+	<script src="../app.js"></script>
+	<script src="../lowBatteryCheck.js"></script>
+
+</body>
+</html>
