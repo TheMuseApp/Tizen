@@ -17,7 +17,7 @@
 		
 		});
 		
-		/*localStorage.setItem("alertText", "Contacts not avialable to make call!");*/
+		/*localStorage.setItem("alertText", "Contacts not ready to make call!");*/
 		document.getElementById("alertText").innerHTML=localStorage.alertText==undefined||localStorage.alertText=="null"?" ":localStorage.alertText;
 		
 	});
